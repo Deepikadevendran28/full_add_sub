@@ -1,15 +1,15 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /full_add/a
-add wave -noupdate /full_add/b
-add wave -noupdate /full_add/cin
-add wave -noupdate /full_add/sum
-add wave -noupdate /full_add/carry
+add wave -noupdate /full_sub/a
+add wave -noupdate /full_sub/b
+add wave -noupdate /full_sub/bin
+add wave -noupdate /full_sub/diff
+add wave -noupdate /full_sub/borrow
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {171 ps} 0}
-quietly wave cursor active 1
+WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+quietly wave cursor active 0
 configure wave -namecolwidth 150
-configure wave -valuecolwidth 95
+configure wave -valuecolwidth 100
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
 configure wave -snapdistance 10
@@ -22,4 +22,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {138 ps} {383 ps}
+WaveRestoreZoom {0 ps} {737 ps}
